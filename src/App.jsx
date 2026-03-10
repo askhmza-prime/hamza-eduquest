@@ -6,6 +6,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import AdminDashboard from './pages/AdminDashboard'
+import Quiz from './pages/Quiz'
+import Leaderboard from './pages/Leaderboard'
 import './styles/global.css'
 
 function App() {
@@ -18,6 +20,12 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={
             <ProtectedRoute><Dashboard /></ProtectedRoute>
+          } />
+          <Route path="/quiz/:subject/:chapter" element={
+            <ProtectedRoute><Quiz /></ProtectedRoute>
+          } />
+          <Route path="/leaderboard" element={
+            <ProtectedRoute><Leaderboard /></ProtectedRoute>
           } />
           <Route path="/admin" element={
             <AdminRoute><AdminDashboard /></AdminRoute>
