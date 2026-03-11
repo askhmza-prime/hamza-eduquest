@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import AdminDashboard from './pages/AdminDashboard'
 import Quiz from './pages/Quiz'
 import Leaderboard from './pages/Leaderboard'
+import AITeacher from './pages/AITeacher'
 import './styles/global.css'
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           } />
           <Route path="/leaderboard" element={
             <ProtectedRoute><Leaderboard /></ProtectedRoute>
+          } />
+          <Route path="/ai-teacher" element={
+            <ProtectedRoute><AITeacher /></ProtectedRoute>
           } />
           <Route path="/admin" element={
             <AdminRoute><AdminDashboard /></AdminRoute>
