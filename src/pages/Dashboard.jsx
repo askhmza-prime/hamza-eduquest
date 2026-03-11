@@ -203,53 +203,11 @@ const Dashboard = () => {
               {lang === 'en' ? 'Stuck on something? AI explains in Hindi & English!' : 'कुछ समझ नहीं आया? AI Hindi & English में समझाएगा!'}
             </p>
           </div>
-          <button className="btn btn-purple" style={{ fontSize: 16, padding: '14px 28px' }}>
+          <button className="btn btn-purple" onClick={() => navigate('/ai-teacher')} style={{ fontSize: 16, padding: '14px 28px' }}>
             💬 Ask Now!
           </button>
         </div>
 
-      </div>
-    </div>
-  )
-}
-
-export default Dashboard                <div style={{ height: '100%', width: '30%', background: `linear-gradient(90deg, ${sub.color}, ${sub.color}80)`, borderRadius: 4 }} />
-              </div>
-              <p style={{ color: 'var(--text2)', fontSize: 12, fontWeight: 700, marginTop: 6 }}>30% Complete</p>
-              <button className="btn" style={{ background: sub.color, color: 'white', width: '100%', marginTop: 16, padding: '10px', fontSize: 14 }}>
-                {lang === 'en' ? 'Play Now! 🎮' : 'खेलो! 🎮'}
-              </button>
-            </div>
-          ))}
-        </div>
-        <h2 style={{ fontSize: 28, marginBottom: 16 }}>🏅 Your Badges</h2>
-        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginBottom: 30 }}>
-          {badges.map((badge, i) => (
-            <div key={i} className="card" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 20px' }}>
-              <span style={{ fontSize: 28 }}>{badge.emoji}</span>
-              <span style={{ fontWeight: 800 }}>{badge.name}</span>
-            </div>
-          ))}
-          <div className="card" style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 20px', opacity: 0.4 }}>
-            <span style={{ fontSize: 28 }}>🔒</span>
-            <span style={{ fontWeight: 800 }}>More badges to unlock!</span>
-          </div>
-        </div>
-        <div className="card" style={{
-          background: 'linear-gradient(135deg, #A855F720, #3B82F620)',
-          borderColor: '#A855F7',
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16
-        }}>
-          <div>
-            <h3 style={{ fontSize: 24, marginBottom: 8, color: '#A855F7' }}>🤖 Ask AI Teacher!</h3>
-            <p style={{ color: 'var(--text2)', fontWeight: 700 }}>
-              {lang === 'en' ? 'Stuck on something? AI explains in Hindi & English!' : 'कुछ समझ नहीं आया? AI Hindi & English में समझाएगा!'}
-            </p>
-          </div>
-          <button className="btn btn-purple" style={{ fontSize: 16, padding: '14px 28px' }}>
-            💬 Ask Now!
-          </button>
-        </div>
       </div>
     </div>
   )
